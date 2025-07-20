@@ -1,9 +1,7 @@
 # Text Generation STM32 Model Zoo
 
 * **`c_code/`** contains the code to run the transfomer on the board + some evaluations methods.
-* **`st_modelzoo/`** contains the files to train, quantized en evaluate the transformer.
-
-This folder provides a **reference implementation and tooling to train, quantize, evaluate, benchmark and deploy compact text generation (language modeling) networks on STM32 devices** (MCU / MPU) using the STM32Cube.AI toolchain.
+* **`st_modelzoo/`** contains the files to train, quantized en evaluate the transformer. This folder provides a **reference implementation and tooling to train, quantize, evaluate, benchmark and deploy compact text generation (language modeling) networks on STM32 devices** (MCU / MPU) using the STM32Cube.AI toolchain.
 
 > Focus: lightweight Transformer‐style (e.g. *tiny BERT generator*) word level language models suitable for on‑device next‑token generation.
 
