@@ -1,0 +1,10 @@
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:41:6:NMI_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:50:6:HardFault_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:63:6:MemManage_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:76:6:BusFault_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:89:6:UsageFault_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:102:6:SecureFault_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:115:6:SVC_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:124:6:DebugMon_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:136:6:PendSV_Handler	4	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/stm32n6xx_it.c:148:6:SysTick_Handler	8	static

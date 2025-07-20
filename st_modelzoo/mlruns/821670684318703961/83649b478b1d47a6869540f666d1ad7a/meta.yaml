@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/drugm/stm32ai-modelzoo-services/text_generation_word/mlruns/821670684318703961/83649b478b1d47a6869540f666d1ad7a/artifacts
+end_time: 1751136810167
+entry_point_name: ''
+experiment_id: '821670684318703961'
+lifecycle_stage: active
+run_id: 83649b478b1d47a6869540f666d1ad7a
+run_name: '2025_06_28_19_44_52'
+run_uuid: 83649b478b1d47a6869540f666d1ad7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751132692177
+status: 3
+tags: []
+user_id: drugm

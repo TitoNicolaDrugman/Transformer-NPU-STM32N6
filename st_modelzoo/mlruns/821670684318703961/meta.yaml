@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/drugm/stm32ai-modelzoo-services/text_generation_word/mlruns/821670684318703961
+creation_time: 1751124687366
+experiment_id: '821670684318703961'
+last_update_time: 1751124687366
+lifecycle_stage: active
+name: tinybert_word_generation

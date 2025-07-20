@@ -1,0 +1,511 @@
+
+Analyzing model 
+C:/Users/drugm/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/Utilities/windows/stedgeai.exe analyze --target stm32n6 --name network -m C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/quantized_model.tflite --st-neural-art n6-allmems-O3@C:/Users/drugm/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/user_neuralart.json --workspace C:/Users/drugm/AppData/Local/Temp/mxAI_workspace168647146550001721861054364285910 --output C:/Users/drugm/.stm32cubemx/network_output 
+ST Edge AI Core v2.1.0-20194 329b0e98d 
+ >>>> EXECUTING NEURAL ART COMPILER 
+   C:/Users/drugm/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/Utilities/windows/atonn.exe -i "C:/Users/drugm/.stm32cubemx/network_output/quantized_model_OE_3_2_0.onnx" --json-quant-file "C:/Users/drugm/.stm32cubemx/network_output/quantized_model_OE_3_2_0_Q.json" -g "network.c" --load-mdesc "C:/Users/drugm/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/my_mdescs/stm32n6.mdesc" --load-mpool "C:/Users/drugm/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/my_mpools/stm32n6.mpool" --save-mpool-file "C:/Users/drugm/AppData/Local/Temp/mxAI_workspace168647146550001721861054364285910/neural_art__network/stm32n6.mpool" --out-dir-prefix "C:/Users/drugm/AppData/Local/Temp/mxAI_workspace168647146550001721861054364285910/neural_art__network/" --optimization 3 --all-buffers-info --mvei --cache-maintenance --Oauto-sched --native-float --enable-virtual-mem-pools --Omax-ca-pipe 4 --Ocache-opt --Os --output-info-file "c_info.json" 
+ <<<< DONE EXECUTING NEURAL ART COMPILER 
+  
+ Exec/report summary (analyze) 
+ -------------------------------------------------------------------------------------------------------------------------- 
+ model file         :   C:\Users\drugm\stm32ai-modelzoo-services\dd2_text_gen_stm32n6v2\quantized_model.tflite              
+ type               :   tflite                                                                                              
+ c_name             :   network                                                                                             
+ options            :   allocate-inputs, allocate-outputs                                                                   
+ optimization       :   balanced                                                                                            
+ target/series      :   stm32n6npu                                                                                          
+ workspace dir      :   C:\Users\drugm\AppData\Local\Temp\mxAI_workspace168647146550001721861054364285910                   
+ output dir         :   C:\Users\drugm\.stm32cubemx\network_output                                                          
+ model_fmt          :   sa/sa per tensor                                                                                    
+ model_name         :   quantized_model                                                                                     
+ model_hash         :   0x7ec9788965a2db42e82d4a34af8f4b30                                                                  
+ params #           :   4,562,979 items (4.35 MiB)                                                                          
+ -------------------------------------------------------------------------------------------------------------------------- 
+ input 1/1          :   'Input_65_out_0', int8(1x30x128), 3.75 KBytes, QLinear(0.001414397,-29,int8), activations           
+ output 1/1         :   'Quantize_769_out_0', int8(1x30x20000), 585.94 KBytes, QLinear(0.070275396,14,int8), activations    
+ macc               :   0                                                                                                   
+ weights (ro)       :   4,599,297 B (4.39 MiB) (1 segment) / -13,652,619(-74.8%) vs float model                             
+ activations (rw)   :   1,266,240 B (1.21 MiB) (3 segments) *                                                               
+ ram (total)        :   1,266,240 B (1.21 MiB) = 1,266,240 + 0 + 0                                                          
+ -------------------------------------------------------------------------------------------------------------------------- 
+ (*) 'input'/'output' buffers can be used from the activations buffer 
+Computing AI RT data/code size (target=stm32n6npu).. 
+Compilation details 
+   --------------------------------------------------------------------------------- 
+Compiler version: 1.1.0-31 
+Compiler arguments:  -i C:\Users\drugm\.stm32cubemx\network_output\quantized_model_OE_3_2_0.onnx --json-quant-file C:\Users\drugm\.stm32cubemx\network_output\quantized_model_OE_3_2_0_Q.json -g network.c --load-mdesc C:\Users\drugm\STM32Cube\Repository\Packs\STMicroelectronics\X-CUBE-AI\10.1.0\scripts\N6_scripts\my_mdescs\stm32n6.mdesc --load-mpool C:\Users\drugm\STM32Cube\Repository\Packs\STMicroelectronics\X-CUBE-AI\10.1.0\scripts\N6_scripts\my_mpools\stm32n6.mpool --save-mpool-file C:\Users\drugm\AppData\Local\Temp\mxAI_workspace168647146550001721861054364285910\neural_art__network\stm32n6.mpool --out-dir-prefix C:\Users\drugm\AppData\Local\Temp\mxAI_workspace168647146550001721861054364285910\neural_art__network/ --optimization 3 --all-buffers-info --mvei --cache-maintenance --Oauto-sched --native-float --enable-virtual-mem-pools --Omax-ca-pipe 4 --Ocache-opt --Os --output-info-file c_info.json 
+==================================================================================== 
+Memory usage information  (input/output buffers are included in activations) 
+   --------------------------------------------------------------------------------- 
+ flexMEM    [0x34000000 - 0x34000000]:          0  B /          0  B  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used) 
+ cpuRAM1    [0x34064000 - 0x34064000]:          0  B /          0  B  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used) 
+ cpuRAM2    [0x34100000 - 0x34200000]:      1.000 MB /      1.000 MB  (100.00 % used) -- weights:          0  B (  0.00 % used)  activations:      1.000 MB (100.00 % used) 
+ npuRAM3    [0x34200000 - 0x34270000]:    147.875 kB /    448.000 kB  ( 33.01 % used) -- weights:          0  B (  0.00 % used)  activations:    147.875 kB ( 33.01 % used) 
+ npuRAM4    [0x34270000 - 0x342E0000]:          0  B /    448.000 kB  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used) 
+ npuRAM5    [0x342E0000 - 0x34350000]:     64.688 kB /    448.000 kB  ( 14.44 % used) -- weights:          0  B (  0.00 % used)  activations:     64.688 kB ( 14.44 % used) 
+ npuRAM6    [0x34350000 - 0x343C0000]:          0  B /    448.000 kB  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used) 
+ octoFlash  [0x71000000 - 0x78000000]:      4.386 MB /    112.000 MB  (  3.92 % used) -- weights:      4.386 MB (  3.92 % used)  activations:          0  B (  0.00 % used) 
+ hyperRAM   [0x90000000 - 0x92000000]:          0  B /     32.000 MB  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used) 
+Total:                                             5.594 MB                                  -- weights:      4.386 MB                  activations:      1.208 MB 
+==================================================================================== 
+Used memory ranges 
+   --------------------------------------------------------------------------------- 
+ cpuRAM2    [0x34100000 - 0x34200000]: 0x34100000-0x34200000 
+ npuRAM3    [0x34200000 - 0x34270000]: 0x34200000-0x34224F80 
+ npuRAM5    [0x342E0000 - 0x34350000]: 0x342E0000-0x342F02C0 
+ octoFlash  [0x71000000 - 0x78000000]: 0x71000000-0x71462E10 
+==================================================================================== 
+Epochs details 
+   --------------------------------------------------------------------------------- 
+Total number of epochs: 407 of which 150 implemented in software 
+epoch ID   HW/SW/EC Operation (SW only) 
+epoch 1       HW 
+epoch 2       HW 
+epoch 3       HW 
+epoch 4       HW 
+epoch 5       HW 
+epoch 6       HW 
+epoch 7      -SW-   (     Transpose      ) 
+epoch 8       HW 
+epoch 9      -SW-   (     Transpose      ) 
+epoch 10      HW 
+epoch 11      HW 
+epoch 12      HW 
+epoch 13     -SW-   (        Conv        ) 
+epoch 14     -SW-   (        Conv        ) 
+epoch 15     -SW-   (        Conv        ) 
+epoch 16     -SW-   (        Conv        ) 
+epoch 17      HW 
+epoch 18      HW 
+epoch 19      HW 
+epoch 20      HW 
+epoch 21     -SW-   (      Softmax       ) 
+epoch 22      HW 
+epoch 23     -SW-   (       Split        ) 
+epoch 24      HW 
+epoch 25     -SW-   (        Conv        ) 
+epoch 26     -SW-   (        Conv        ) 
+epoch 27     -SW-   (        Conv        ) 
+epoch 28     -SW-   (        Conv        ) 
+epoch 29      HW 
+epoch 30      HW 
+epoch 31     -SW-   (     Transpose      ) 
+epoch 32      HW 
+epoch 33      HW 
+epoch 34      HW 
+epoch 35      HW 
+epoch 36      HW 
+epoch 37      HW 
+epoch 38      HW 
+epoch 39      HW 
+epoch 40     -SW-   (  DequantizeLinear  ) 
+epoch 41     -SW-   (     Reciprocal     ) 
+epoch 42     -SW-   (   QuantizeLinear   ) 
+epoch 43     -SW-   (        Mul         ) 
+epoch 44     -SW-   (   QuantizeLinear   ) 
+epoch 45      HW 
+epoch 46      HW 
+epoch 47     -SW-   (        Sub         ) 
+epoch 48      HW 
+epoch 49      HW 
+epoch 50      HW 
+epoch 51      HW 
+epoch 52      HW 
+epoch 53      HW 
+epoch 54      HW 
+epoch 55      HW 
+epoch 56      HW 
+epoch 57      HW 
+epoch 58      HW 
+epoch 59      HW 
+epoch 60     -SW-   (  DequantizeLinear  ) 
+epoch 61     -SW-   (     Reciprocal     ) 
+epoch 62     -SW-   (   QuantizeLinear   ) 
+epoch 63     -SW-   (        Mul         ) 
+epoch 64     -SW-   (   QuantizeLinear   ) 
+epoch 65      HW 
+epoch 66      HW 
+epoch 67     -SW-   (        Sub         ) 
+epoch 68      HW 
+epoch 69      HW 
+epoch 70      HW 
+epoch 71      HW 
+epoch 72      HW 
+epoch 73      HW 
+epoch 74     -SW-   (     Transpose      ) 
+epoch 75      HW 
+epoch 76     -SW-   (     Transpose      ) 
+epoch 77      HW 
+epoch 78      HW 
+epoch 79      HW 
+epoch 80     -SW-   (        Conv        ) 
+epoch 81     -SW-   (        Conv        ) 
+epoch 82     -SW-   (        Conv        ) 
+epoch 83     -SW-   (        Conv        ) 
+epoch 84      HW 
+epoch 85      HW 
+epoch 86      HW 
+epoch 87      HW 
+epoch 88     -SW-   (      Softmax       ) 
+epoch 89      HW 
+epoch 90     -SW-   (       Split        ) 
+epoch 91      HW 
+epoch 92     -SW-   (        Conv        ) 
+epoch 93     -SW-   (        Conv        ) 
+epoch 94     -SW-   (        Conv        ) 
+epoch 95     -SW-   (        Conv        ) 
+epoch 96      HW 
+epoch 97      HW 
+epoch 98     -SW-   (     Transpose      ) 
+epoch 99      HW 
+epoch 100     HW 
+epoch 101     HW 
+epoch 102     HW 
+epoch 103     HW 
+epoch 104     HW 
+epoch 105     HW 
+epoch 106     HW 
+epoch 107    -SW-   (  DequantizeLinear  ) 
+epoch 108    -SW-   (     Reciprocal     ) 
+epoch 109    -SW-   (   QuantizeLinear   ) 
+epoch 110    -SW-   (        Mul         ) 
+epoch 111    -SW-   (   QuantizeLinear   ) 
+epoch 112     HW 
+epoch 113     HW 
+epoch 114    -SW-   (        Sub         ) 
+epoch 115     HW 
+epoch 116     HW 
+epoch 117     HW 
+epoch 118     HW 
+epoch 119     HW 
+epoch 120     HW 
+epoch 121     HW 
+epoch 122     HW 
+epoch 123     HW 
+epoch 124     HW 
+epoch 125     HW 
+epoch 126     HW 
+epoch 127    -SW-   (  DequantizeLinear  ) 
+epoch 128    -SW-   (     Reciprocal     ) 
+epoch 129    -SW-   (   QuantizeLinear   ) 
+epoch 130    -SW-   (        Mul         ) 
+epoch 131    -SW-   (   QuantizeLinear   ) 
+epoch 132     HW 
+epoch 133     HW 
+epoch 134    -SW-   (        Sub         ) 
+epoch 135     HW 
+epoch 136     HW 
+epoch 137     HW 
+epoch 138     HW 
+epoch 139     HW 
+epoch 140     HW 
+epoch 141    -SW-   (     Transpose      ) 
+epoch 142     HW 
+epoch 143    -SW-   (     Transpose      ) 
+epoch 144     HW 
+epoch 145     HW 
+epoch 146     HW 
+epoch 147    -SW-   (        Conv        ) 
+epoch 148    -SW-   (        Conv        ) 
+epoch 149    -SW-   (        Conv        ) 
+epoch 150    -SW-   (        Conv        ) 
+epoch 151     HW 
+epoch 152     HW 
+epoch 153     HW 
+epoch 154     HW 
+epoch 155    -SW-   (      Softmax       ) 
+epoch 156     HW 
+epoch 157    -SW-   (       Split        ) 
+epoch 158     HW 
+epoch 159    -SW-   (        Conv        ) 
+epoch 160    -SW-   (        Conv        ) 
+epoch 161    -SW-   (        Conv        ) 
+epoch 162    -SW-   (        Conv        ) 
+epoch 163     HW 
+epoch 164     HW 
+epoch 165    -SW-   (     Transpose      ) 
+epoch 166     HW 
+epoch 167     HW 
+epoch 168     HW 
+epoch 169     HW 
+epoch 170     HW 
+epoch 171     HW 
+epoch 172     HW 
+epoch 173     HW 
+epoch 174    -SW-   (  DequantizeLinear  ) 
+epoch 175    -SW-   (     Reciprocal     ) 
+epoch 176    -SW-   (   QuantizeLinear   ) 
+epoch 177    -SW-   (        Mul         ) 
+epoch 178    -SW-   (   QuantizeLinear   ) 
+epoch 179     HW 
+epoch 180     HW 
+epoch 181    -SW-   (        Sub         ) 
+epoch 182     HW 
+epoch 183     HW 
+epoch 184     HW 
+epoch 185     HW 
+epoch 186     HW 
+epoch 187     HW 
+epoch 188     HW 
+epoch 189     HW 
+epoch 190     HW 
+epoch 191     HW 
+epoch 192     HW 
+epoch 193     HW 
+epoch 194    -SW-   (  DequantizeLinear  ) 
+epoch 195    -SW-   (     Reciprocal     ) 
+epoch 196    -SW-   (   QuantizeLinear   ) 
+epoch 197    -SW-   (        Mul         ) 
+epoch 198    -SW-   (   QuantizeLinear   ) 
+epoch 199     HW 
+epoch 200     HW 
+epoch 201    -SW-   (        Sub         ) 
+epoch 202     HW 
+epoch 203     HW 
+epoch 204     HW 
+epoch 205     HW 
+epoch 206     HW 
+epoch 207     HW 
+epoch 208    -SW-   (     Transpose      ) 
+epoch 209     HW 
+epoch 210    -SW-   (     Transpose      ) 
+epoch 211     HW 
+epoch 212     HW 
+epoch 213     HW 
+epoch 214    -SW-   (        Conv        ) 
+epoch 215    -SW-   (        Conv        ) 
+epoch 216    -SW-   (        Conv        ) 
+epoch 217    -SW-   (        Conv        ) 
+epoch 218     HW 
+epoch 219     HW 
+epoch 220     HW 
+epoch 221     HW 
+epoch 222    -SW-   (      Softmax       ) 
+epoch 223     HW 
+epoch 224    -SW-   (       Split        ) 
+epoch 225     HW 
+epoch 226    -SW-   (        Conv        ) 
+epoch 227    -SW-   (        Conv        ) 
+epoch 228    -SW-   (        Conv        ) 
+epoch 229    -SW-   (        Conv        ) 
+epoch 230     HW 
+epoch 231     HW 
+epoch 232    -SW-   (     Transpose      ) 
+epoch 233     HW 
+epoch 234     HW 
+epoch 235     HW 
+epoch 236     HW 
+epoch 237     HW 
+epoch 238     HW 
+epoch 239     HW 
+epoch 240     HW 
+epoch 241    -SW-   (  DequantizeLinear  ) 
+epoch 242    -SW-   (     Reciprocal     ) 
+epoch 243    -SW-   (   QuantizeLinear   ) 
+epoch 244    -SW-   (        Mul         ) 
+epoch 245    -SW-   (   QuantizeLinear   ) 
+epoch 246     HW 
+epoch 247     HW 
+epoch 248    -SW-   (        Sub         ) 
+epoch 249     HW 
+epoch 250     HW 
+epoch 251     HW 
+epoch 252     HW 
+epoch 253     HW 
+epoch 254     HW 
+epoch 255     HW 
+epoch 256     HW 
+epoch 257     HW 
+epoch 258     HW 
+epoch 259     HW 
+epoch 260     HW 
+epoch 261    -SW-   (  DequantizeLinear  ) 
+epoch 262    -SW-   (     Reciprocal     ) 
+epoch 263    -SW-   (   QuantizeLinear   ) 
+epoch 264    -SW-   (        Mul         ) 
+epoch 265    -SW-   (   QuantizeLinear   ) 
+epoch 266     HW 
+epoch 267     HW 
+epoch 268    -SW-   (        Sub         ) 
+epoch 269     HW 
+epoch 270     HW 
+epoch 271     HW 
+epoch 272     HW 
+epoch 273     HW 
+epoch 274     HW 
+epoch 275    -SW-   (     Transpose      ) 
+epoch 276     HW 
+epoch 277    -SW-   (     Transpose      ) 
+epoch 278     HW 
+epoch 279     HW 
+epoch 280     HW 
+epoch 281    -SW-   (        Conv        ) 
+epoch 282    -SW-   (        Conv        ) 
+epoch 283    -SW-   (        Conv        ) 
+epoch 284    -SW-   (        Conv        ) 
+epoch 285     HW 
+epoch 286     HW 
+epoch 287     HW 
+epoch 288     HW 
+epoch 289    -SW-   (      Softmax       ) 
+epoch 290     HW 
+epoch 291    -SW-   (       Split        ) 
+epoch 292     HW 
+epoch 293    -SW-   (        Conv        ) 
+epoch 294    -SW-   (        Conv        ) 
+epoch 295    -SW-   (        Conv        ) 
+epoch 296    -SW-   (        Conv        ) 
+epoch 297     HW 
+epoch 298     HW 
+epoch 299    -SW-   (     Transpose      ) 
+epoch 300     HW 
+epoch 301     HW 
+epoch 302     HW 
+epoch 303     HW 
+epoch 304     HW 
+epoch 305     HW 
+epoch 306     HW 
+epoch 307     HW 
+epoch 308    -SW-   (  DequantizeLinear  ) 
+epoch 309    -SW-   (     Reciprocal     ) 
+epoch 310    -SW-   (   QuantizeLinear   ) 
+epoch 311    -SW-   (        Mul         ) 
+epoch 312    -SW-   (   QuantizeLinear   ) 
+epoch 313     HW 
+epoch 314     HW 
+epoch 315    -SW-   (        Sub         ) 
+epoch 316     HW 
+epoch 317     HW 
+epoch 318     HW 
+epoch 319     HW 
+epoch 320     HW 
+epoch 321     HW 
+epoch 322     HW 
+epoch 323     HW 
+epoch 324     HW 
+epoch 325     HW 
+epoch 326     HW 
+epoch 327     HW 
+epoch 328    -SW-   (  DequantizeLinear  ) 
+epoch 329    -SW-   (     Reciprocal     ) 
+epoch 330    -SW-   (   QuantizeLinear   ) 
+epoch 331    -SW-   (        Mul         ) 
+epoch 332    -SW-   (   QuantizeLinear   ) 
+epoch 333     HW 
+epoch 334     HW 
+epoch 335    -SW-   (        Sub         ) 
+epoch 336     HW 
+epoch 337     HW 
+epoch 338     HW 
+epoch 339     HW 
+epoch 340     HW 
+epoch 341     HW 
+epoch 342    -SW-   (     Transpose      ) 
+epoch 343     HW 
+epoch 344    -SW-   (     Transpose      ) 
+epoch 345     HW 
+epoch 346     HW 
+epoch 347     HW 
+epoch 348    -SW-   (        Conv        ) 
+epoch 349    -SW-   (        Conv        ) 
+epoch 350    -SW-   (        Conv        ) 
+epoch 351    -SW-   (        Conv        ) 
+epoch 352     HW 
+epoch 353     HW 
+epoch 354     HW 
+epoch 355     HW 
+epoch 356    -SW-   (      Softmax       ) 
+epoch 357     HW 
+epoch 358    -SW-   (       Split        ) 
+epoch 359     HW 
+epoch 360    -SW-   (        Conv        ) 
+epoch 361    -SW-   (        Conv        ) 
+epoch 362    -SW-   (        Conv        ) 
+epoch 363    -SW-   (        Conv        ) 
+epoch 364     HW 
+epoch 365     HW 
+epoch 366    -SW-   (     Transpose      ) 
+epoch 367     HW 
+epoch 368     HW 
+epoch 369     HW 
+epoch 370     HW 
+epoch 371     HW 
+epoch 372     HW 
+epoch 373     HW 
+epoch 374     HW 
+epoch 375    -SW-   (  DequantizeLinear  ) 
+epoch 376    -SW-   (     Reciprocal     ) 
+epoch 377    -SW-   (   QuantizeLinear   ) 
+epoch 378    -SW-   (        Mul         ) 
+epoch 379    -SW-   (   QuantizeLinear   ) 
+epoch 380     HW 
+epoch 381     HW 
+epoch 382    -SW-   (        Sub         ) 
+epoch 383     HW 
+epoch 384     HW 
+epoch 385     HW 
+epoch 386     HW 
+epoch 387     HW 
+epoch 388     HW 
+epoch 389     HW 
+epoch 390     HW 
+epoch 391     HW 
+epoch 392     HW 
+epoch 393     HW 
+epoch 394     HW 
+epoch 395    -SW-   (  DequantizeLinear  ) 
+epoch 396    -SW-   (     Reciprocal     ) 
+epoch 397    -SW-   (   QuantizeLinear   ) 
+epoch 398    -SW-   (        Mul         ) 
+epoch 399    -SW-   (   QuantizeLinear   ) 
+epoch 400     HW 
+epoch 401     HW 
+epoch 402    -SW-   (        Sub         ) 
+epoch 403     HW 
+epoch 404     HW 
+epoch 405     HW 
+epoch 406     HW 
+epoch 407     HW 
+==================================================================================== 
+ Requested memory size by section - "stm32n6npu" target 
+ ------------------------------- --------- ----------- ------ ----------- 
+ module                               text      rodata   data         bss 
+ ------------------------------- --------- ----------- ------ ----------- 
+ network.o                          61,608     334,779      0           0 
+ NetworkRuntime1010_CM55_GCC.a     104,608          16     32           0 
+ ll_aton_reloc_network.o                 0           0      0           0 
+ lib (toolchain)*                   10,812       2,254      0           0 
+ ll atonn runtime                   17,718      78,788    192       1,621 
+ ------------------------------- --------- ----------- ------ ----------- 
+ RT total**                        194,746     415,837    224       1,621 
+ ------------------------------- --------- ----------- ------ ----------- 
+ weights                                 0   4,599,297      0           0 
+ activations                             0           0      0   1,266,240 
+ io                                      0           0      0           0 
+ ------------------------------- --------- ----------- ------ ----------- 
+ TOTAL                             194,746   5,015,134    224   1,267,861 
+ ------------------------------- --------- ----------- ------ ----------- 
+ *  toolchain objects (libm/libgcc*) 
+ ** RT AI runtime objects (kernels+infrastructure) 
+  Summary - "stm32n6npu" target 
+  --------------------------------------------------- 
+               FLASH (ro)      %*    RAM (rw)      % 
+  --------------------------------------------------- 
+  RT total        610,807   11.7%       1,845   0.1% 
+  --------------------------------------------------- 
+  TOTAL         5,210,104           1,268,085 
+  --------------------------------------------------- 
+  *  rt/total 
+Creating txt report file C:\Users\drugm\.stm32cubemx\network_output\network_analyze_report.txt 
+elapsed time (analyze): 23.172s 
+Model file:      quantized_model.tflite 
+Total Flash:     5210104 B (4.97 MiB) 
+    Weights:     4599297 B (4.39 MiB) 
+    Library:     610807 B (596.49 KiB) 
+Total Ram:       1268085 B (1.21 MiB) 
+    Activations: 1266240 B (1.21 MiB) 
+    Library:     1845 B (1.80 KiB) 
+    Input:       3840 B (3.75 KiB included in Activations) 
+    Output:      600000 B (585.94 KiB included in Activations) 
+Done 
+Analyze complete on AI model

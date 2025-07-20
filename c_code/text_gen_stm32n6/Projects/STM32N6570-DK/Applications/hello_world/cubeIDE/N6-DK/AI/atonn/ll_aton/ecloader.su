@@ -1,0 +1,7 @@
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:122:6:ec_copy_program	48	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:240:6:ec_copy_reloc_table	48	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:325:20:ec_get_reloc_table_ptr	32	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:360:14:ec_get_num_relocs	24	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:382:13:ec_get_reloc_id	32	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:422:6:ec_reloc	48	static
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:487:6:ec_reloc_by_id	64	static

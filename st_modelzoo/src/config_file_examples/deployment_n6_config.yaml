@@ -1,0 +1,38 @@
+general:
+  # path to a `.tflite` or `.onnx` file.
+  model_path: ../../stm32ai-modelzoo/image_classification/mobilenetv2/ST_pretrainedmodel_public_dataset/flowers/mobilenet_v2_0.35_128_fft/mobilenet_v2_0.35_128_fft_int8.tflite
+
+operation_mode: deployment
+
+dataset:
+  name: flowers_dataset
+  class_names: [daisy, dandelion, roses, sunflowers, tulips]
+
+preprocessing:
+  resizing:
+    interpolation: bilinear
+    aspect_ratio: crop
+  color_mode: rgb # rgb, bgr
+
+tools:
+  stedgeai:
+    version: 10.0.0
+    optimization: balanced
+    on_cloud: False # Not Available For STM32N6
+    path_to_stedgeai: C:/Users/<XXXXX>/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/<*.*.*>/Utilities/windows/stedgeai.exe
+  path_to_cubeIDE: C:/ST/STM32CubeIDE_<*.*.*>/STM32CubeIDE/stm32cubeide.exe
+
+deployment:
+  c_project_path: ../application_code/image_classification/STM32N6/
+  IDE: GCC
+  verbosity: 1
+  hardware_setup:
+    serie: STM32N6
+    board: STM32N6570-DK
+
+hydra:
+  run:
+    dir: ./src/experiments_outputs/${now:%Y_%m_%d_%H_%M_%S}
+
+mlflow:
+  uri: ./src/experiments_outputs/mlruns

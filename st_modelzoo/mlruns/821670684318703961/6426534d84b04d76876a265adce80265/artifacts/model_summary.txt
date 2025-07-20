@@ -1,0 +1,33 @@
+Model: "tiny_bert_generator"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ token_ids (InputLayer)      [(None, 30)]              0         
+                                                                 
+ token_embedding (Embedding)  (None, 30, 128)          2560000   
+                                                                 
+ tf.math.multiply (TFOpLambd  (None, 30, 128)          0         
+ a)                                                              
+                                                                 
+ tf.__operators__.add (TFOpL  (None, 30, 128)          0         
+ ambda)                                                          
+                                                                 
+ enc_0 (EncoderLayer)        (None, 30, 128)           329856    
+                                                                 
+ enc_1 (EncoderLayer)        (None, 30, 128)           329856    
+                                                                 
+ enc_2 (EncoderLayer)        (None, 30, 128)           329856    
+                                                                 
+ enc_3 (EncoderLayer)        (None, 30, 128)           329856    
+                                                                 
+ enc_4 (EncoderLayer)        (None, 30, 128)           329856    
+                                                                 
+ enc_5 (EncoderLayer)        (None, 30, 128)           329856    
+                                                                 
+ output_dense (Dense)        (None, 30, 20000)         2580000   
+                                                                 
+=================================================================
+Total params: 7,119,136
+Trainable params: 7,119,136
+Non-trainable params: 0
+_________________________________________________________________

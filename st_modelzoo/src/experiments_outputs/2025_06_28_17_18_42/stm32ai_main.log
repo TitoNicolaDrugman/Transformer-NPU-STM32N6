@@ -1,0 +1,3 @@
+operation_mode: chain_tqe
+[2025-06-28 17:19:29,217][tensorflow][WARNING] - Efficient allreduce is not supported for 1 IndexedSlices
+[2025-06-28 17:19:30,598][tensorflow][WARNING] - Efficient allreduce is not supported for 1 IndexedSlices

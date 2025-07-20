@@ -1,0 +1,3 @@
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/system_clock_config.c:25:6:SystemClock_Config_64MHZ	3
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/system_clock_config.c:73:6:SystemClock_Config_HSI_overdrive	4
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/system_clock_config.c:209:6:SystemClock_Config_HSI_no_overdrive	4

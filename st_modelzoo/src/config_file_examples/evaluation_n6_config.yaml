@@ -1,0 +1,35 @@
+general:
+   model_path: ../../stm32ai-modelzoo/image_classification/mobilenetv2/ST_pretrainedmodel_public_dataset/food-101/mobilenet_v2_0.35_224_fft/mobilenet_v2_0.35_224_fft_int8.tflite
+
+operation_mode: evaluation
+
+evaluation:
+   profile: profile_O3
+   input_type: uint8     # int8 / uint8 / float32
+   output_type: int8     # int8 / uint8 / float32
+   input_chpos: chlast   # chlast / chfirst
+   output_chpos: chlast  # chlast / chfirst
+   target: stedgeai_n6 # host, stedgeai_host, stedgeai_n6
+
+dataset:
+   test_path: ./datasets/food101_nano
+
+preprocessing:
+   rescaling:
+      scale: 1/127.5
+      offset: -1
+   resizing:
+      interpolation: bilinear
+      aspect_ratio: fit
+   color_mode: rgb
+
+tools:
+   stedgeai:
+      path_to_stedgeai: C:/ST/STEdgeAI/2.1/Utilities/windows/stedgeai.exe
+
+mlflow:
+   uri: ./src/experiments_outputs/mlruns
+
+hydra:
+   run:
+      dir: ./src/experiments_outputs/${now:%Y_%m_%d_%H_%M_%S}

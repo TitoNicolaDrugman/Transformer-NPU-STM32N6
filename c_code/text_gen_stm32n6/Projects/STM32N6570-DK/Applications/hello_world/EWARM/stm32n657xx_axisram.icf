@@ -1,0 +1,78 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
+/*-Specials-*/
+define symbol __ICFEDIT_intvec_start__ = 0x34000000;
+/*-Memory Regions-*/
+define symbol __ICFEDIT_region_ROM_start__ = 0x34000000;       /* AXISRAM1 start */
+define symbol __ICFEDIT_region_ROM_end__   = 0x340FFFFF;       /* AXISRAM1 end   */
+define symbol __ICFEDIT_region_RAM_start__ = 0x34000000;       /* AXISRAM1 start */
+define symbol __ICFEDIT_region_RAM_end__   = 0x340FFFFF;       /* AXISRAM1 end   */
+
+/*-Sizes-*/
+define symbol __ICFEDIT_size_cstack__ = 0x4000;   // 28 KB
+define symbol __ICFEDIT_size_heap__   = 0x2000;   // 28 KB
+/**** End of ICF editor section. ###ICF###*/
+
+define symbol region_ITCM_start = 0x00000000;
+define symbol region_ITCM_end   = 0x0000FFFF; // ITCM base line
+define symbol region_DTCM_start = 0x30000000;
+define symbol region_DTCM_end   = 0x3001FFFF; // DTCM base line
+// define symbol region_DTCM_end   = 0x3003FFFF; // DTCM extension
+// define symbol region_DTCM_end   = 0x300FFFFF; // DTCM extension
+
+define symbol region_AXISRAM1_start = 0x34000000;
+define symbol region_AXISRAM1_end   = 0x340FFFFF;
+
+define symbol region_AXISRAM2_start = 0x34100000;
+define symbol region_AXISRAM2_end   = 0x341FFFFF;
+
+define symbol region_AXISRAM3_start = 0x34200000;
+define symbol region_AXISRAM3_end   = 0x3426FFFF;
+
+define symbol region_AXISRAM4_start = 0x34270000;
+define symbol region_AXISRAM4_end   = 0x342DFFFF;
+
+define symbol region_AXISRAM5_start = 0x342E0000;
+define symbol region_AXISRAM5_end   = 0x3434FFFF;
+
+define symbol region_AXISRAM6_start = 0x34350000;
+define symbol region_AXISRAM6_end   = 0x343BFFFF;
+
+define symbol region_CACHEAXI_start = 0x343C0000;
+define symbol region_CACHEAXI_end   = 0x343FFFFF;
+
+define symbol region_VENCRAM_start = 0x34400000;
+define symbol region_VENCRAM_end   = 0x3441FFFF;
+
+define symbol region_XSPI1_start = 0x90000000;
+define symbol region_XSPI1_end   = 0x93FFFFFF;
+
+
+define memory mem with size = 4G;
+define region ROM_region      = mem:[from __ICFEDIT_region_ROM_start__ to __ICFEDIT_region_ROM_end__]; /* 1024 KB */
+define region RAM_region      = mem:[from __ICFEDIT_region_RAM_start__ to __ICFEDIT_region_RAM_end__]; /* 1024 KB */
+define region ITCM_region     = mem:[from region_ITCM_start to region_ITCM_end]; /* 64 KB ITCM base line */
+define region DTCM_region     = mem:[from region_DTCM_start to region_DTCM_end]; /* 128 KB DTCM base line */
+define region AXISRAM1_region = mem:[from region_AXISRAM1_start to region_AXISRAM1_end]; /* 1024 KB */
+define region AXISRAM2_region = mem:[from region_AXISRAM2_start to region_AXISRAM2_end]; /* 1024 KB */
+define region AXISRAM3_region = mem:[from region_AXISRAM3_start to region_AXISRAM3_end]; /* 448 KB */
+define region AXISRAM4_region = mem:[from region_AXISRAM4_start to region_AXISRAM4_end]; /* 448 KB */
+define region AXISRAM5_region = mem:[from region_AXISRAM5_start to region_AXISRAM5_end]; /* 448 KB */
+define region AXISRAM6_region = mem:[from region_AXISRAM6_start to region_AXISRAM6_end]; /* 448 KB */
+define region CACHEAXI_region = mem:[from region_CACHEAXI_start to region_CACHEAXI_end]; /* 256 KB */
+define region VENCRAM_region = mem:[from region_VENCRAM_start to region_VENCRAM_end]; /* 128 KB */
+// define region NPUSRAM_region  = mem:[from region_AXISRAM3_start to region_AXISRAM6_end]; /* 1.75 MB */
+// define region XSPI1_region  = mem:[from region_XSPI1_start to region_XSPI1_end]; /* 64 MB */
+// define region AXISRAM12_region = mem:[from region_AXISRAM1_start to region_AXISRAM2_end]; /* 2048 KB */
+
+define block CSTACK    with alignment = 8, size = __ICFEDIT_size_cstack__   { };
+define block HEAP      with alignment = 8, size = __ICFEDIT_size_heap__     { };
+
+initialize by copy { readwrite };
+do not initialize  { section .noinit };
+
+place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };
+
+place in ROM_region   { readonly };
+place in RAM_region   { readwrite, block CSTACK, block HEAP };

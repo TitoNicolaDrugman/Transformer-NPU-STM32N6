@@ -1,0 +1,1 @@
+Measured inference time: 42.38 ms

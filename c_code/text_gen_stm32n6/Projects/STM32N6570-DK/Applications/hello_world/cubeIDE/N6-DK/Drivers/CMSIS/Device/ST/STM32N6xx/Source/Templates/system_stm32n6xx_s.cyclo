@@ -1,0 +1,4 @@
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/cubeIDE/../Inc/partition_stm32n657xx.h:691:22:TZ_SAU_Setup	1
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Drivers/CMSIS/Device/ST/STM32N6xx/Source/Templates/system_stm32n6xx_s.c:184:6:SystemInit	1
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Drivers/CMSIS/Device/ST/STM32N6xx/Source/Templates/system_stm32n6xx_s.c:277:6:SystemCoreClockUpdate	24
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Drivers/CMSIS/Device/ST/STM32N6xx/Source/Templates/system_stm32n6xx_s.c:437:24:SECURE_SystemCoreClockUpdate	1

@@ -1,0 +1,24 @@
+
+(st_zoo_validate) C:\Users\drugm\stm32ai-modelzoo-services\dd2_text_gen_stm32n6v2\text_gen_stm32n6>python serial_demo.py
+Romeo, enough:(72923 µs) Fluellen(75180 µs) grateful(71673 µs) port.(76971 µs) earnest(70048 µs) fills(71862 µs) dog,(70135 µs) skies,(76813 µs) punished(76574 µs) here,
+Which(76656 µs) practise(71266 µs) dreams,(73654 µs) genuine(77190 µs) Angelo,(71223 µs) Rosaline,(72564 µs) “they(77240 µs) folks,(76833 µs) chance;(75032 µs) joined(69921 µs) merrier(74892 µs) plumed(76313 µs) a
+(71221 µs) passes(71448 µs) art
+As(77319 µs) own,(69944 µs) sun;(72742 µs) [_Storm(76688 µs) Gonzalo,(76952 µs) denied(70049 µs) Abraham(76821 µs) tow(72403 µs) for
+they(75731 µs) creatures(69836 µs) Pyramus,(71843 µs) other(69164 µs) ‘a(76848 µs) speaker(74281 µs) coz,(70825 µs) freely(70039 µs) live;(71438 µs) town,(70349 µs) design.(73615 µs) one
+That(73974 µs) disdain(70912 µs) guards(74332 µs) telling,(77563 µs) not
+the(73700 µs) points(70476 µs) down
+and(75924 µs) Enobarbus_.](75871 µs) Ghost(71625 µs) mind
+That(73598 µs) Your(69410 µs) it.
+
+Enter(72166 µs) rack(71691 µs) passed(69365 µs) arise,(75283 µs) granting(76773 µs) angels,(76735 µs) Pray,(71345 µs) fold(73122 µs) earthly(69913 µs) kin(71455 µs) Jane,”(75671 µs) fail.(76175 µs) leap(70436 µs) points,(73794 µs) gains(75985 µs) working(70373 µs) lance;(76884 µs) distinguish(71473 µs) horror.(73778 µs) cleft(73189 µs) tun’d(75777 µs) good(69157 µs) incomparable(76927 µs) straight(69522 µs) storm(69965 µs) sake.(75385 µs) Katherine(72027 µs) prey,
+And(75252 µs) Rosalind.
+
+ROSALIND.
+And(77725 µs) comes;(71903 µs) discovery(70488 µs) hands
+That(77557 µs) perished(74466 µs) driven(70261 µs) paths(73823 µs) obedient(70650 µs) continued(69724 µs) behind.(74150 µs) Prospero’s(76946 µs) you,
+For(72674 µs) concluded(70467 µs) think.(72770 µs) kinsmen,(73727 µs) evening.(73846 µs) “they(77255 µs) conquering(73069 µs) kill’d(69857 µs) Pistol(71610 µs) horror.(73782 µs) I
+will(69910 µs) angry(69638 µs) shades(72319 µs) and(69118 µs) [_Aside._](71068 µs) vail(73618 µs) majestic(71800 µs) emerged(77047 µs) chest(71514 µs) visage(70869 µs) [_Exit_(73876 µs) obscure(71330 µs) author,(76559 µs) whose(69180 µs) plunge(72354 µs) esteemed(71762 µs) Nurse(73849 µs) scape(71616 µs) spectacle(72878 µs) Wast(73548 µs) shoulder(71070 µs) irks(77658 µs) Wast(73568 µs) bed,(69636 µs) forswore(73582 µs) surnamed(73653 µs)
+
+Generated 128 tokens in 9361292 µs (9.361 s), avg 73135.1 µs/token
+
+(st_zoo_validate) C:\Users\drugm\stm32ai-modelzoo-services\dd2_text_gen_stm32n6v2\text_gen_stm32n6>

@@ -1,0 +1,7 @@
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/cubeIDE/../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_usart.h:2998:26:LL_USART_IsActiveFlag_RXNE_RXFNE	2
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/cubeIDE/../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_usart.h:3009:26:LL_USART_IsActiveFlag_TC	2
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/cubeIDE/../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_usart.h:3024:26:LL_USART_IsActiveFlag_TXE_TXFNF	2
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/cubeIDE/../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_usart.h:4252:25:LL_USART_ReceiveData8	1
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/cubeIDE/../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_usart.h:4275:22:LL_USART_TransmitData8	1
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/uart.c:31:5:uart_write	6
+C:/Users/drugm/stm32ai-modelzoo-services/dd2_text_gen_stm32n6v2/text_gen_stm32n6/Projects/STM32N6570-DK/Applications/hello_world/Src/uart.c:52:5:uart_read	10
